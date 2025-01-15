@@ -1,42 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
 
-
 * {
     padding: 0;
     margin: 0;
-    padding: 0;
     font-family: "Kanit", serif;
     text-decoration: none;
 }
 
 /* HEADER */
-#header{
+#header {
     display: flex;
     justify-content: space-between;
     height: 70px;
-    
+    flex-wrap: wrap;
+    /* Permite que os itens se ajustem em telas menores */
+    align-items: center;
+    /* Garante alinhamento central dos itens */
 }
 
-#nav{
+#nav {
     padding-right: 20px;
     align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    /* Garante que o menu de navegação ocupe o espaço necessário */
+    margin-top: 10px;
+    flex-wrap: wrap;
+    /* Permite que os links de navegação se ajustem em telas pequenas */
 }
 
-#nav a:hover{
+#nav a:hover {
     background-color: #00b0e6;
     color: white;
     font-weight: bold;
 }
-#nav a{
-        margin-right: 60px;
-        padding:10px;
-        font-weight: normal;
-        color:rgb(255, 255, 255);
-        border-radius: 20px;
-        font-size: 16px;
+
+#nav a {
+    margin-right: 20px;
+    padding: 10px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: 16px;
+    white-space: nowrap;
+    /* Impede a quebra de linha nos links */
 }
-#logo img{
+
+#logo img {
     height: 100%;
+    max-height: 60px;
+    /* Limita a altura da logo */
+    max-width: 100%;
+    /* Garante que a logo não ultrapasse o contêiner */
 }
 
 header {
@@ -44,7 +60,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #00b0e6; /* Borda inferior suave */
+    border-bottom: 1px solid #00b0e6;
     padding-bottom: 15px;
     padding-top: 10px;
 }
@@ -57,6 +73,67 @@ footer {
     border-top: 1px solid #00b0e6;
     color: white;
 }
+
 footer p {
     margin: 5px 0;
+}
+
+/* MEDIA QUERIES PARA RESPONSIVIDADE */
+
+/* Telas pequenas (mobile) */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    #nav {
+        padding-right: 0;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #nav a {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    #logo img {
+        max-height: 50px;
+        /* Logo menor em telas pequenas */
+    }
+
+    header {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+/* Telas muito pequenas (ex: dispositivos móveis menores) */
+@media (max-width: 480px) {
+    #header {
+        height: auto;
+        padding: 10px;
+    }
+
+    #nav a {
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+    header {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
 }

@@ -26,7 +26,8 @@ body {
 }
 
 .containerUser .txt {
-    justify-self: baseline;
+    justify-self: center;
+    padding-bottom:25px ;
 }
 
 .linguagens {
@@ -39,6 +40,8 @@ body {
     height: auto;
     width: 300px;
     border-radius: 100%;
+    justify-self: center;
+    padding-top: 20px;
 }
 
 .nome {
