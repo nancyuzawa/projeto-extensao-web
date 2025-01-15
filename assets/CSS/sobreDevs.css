@@ -1,7 +1,8 @@
-body{
+body {
     background-color: #1e1e1e;
 }
-.containerUser{
+
+.containerUser {
     display: flex;
     flex-direction: row;
     gap: 70px;
@@ -11,7 +12,6 @@ body{
     margin-bottom: 50px;
     color: white;
     padding: 10px;
-  
 }
 
 .linguagens ul {
@@ -24,37 +24,105 @@ body{
     display: inline-block;
     margin-right: 10px; /* Espaçamento entre os itens */
 }
-.containerUser .txt{
+
+.containerUser .txt {
     justify-self: baseline;
-    
-    
 }
 
-
-.linguagens{
+.linguagens {
     display: flex;
     flex-direction: column;
     font-size: 20px;
-    
 }
 
-.img img{
+.img img {
     height: auto;
     width: 400px;
     border-radius: 100%;
 }
 
-.nome{
+.nome {
     border-bottom: 1px solid rgba(38, 137, 252, 0.733);
     font-size: 30px;
 }
-.descricao{
+
+.descricao {
     font-size: 25px;
-    
 }
 
-.txt{
+.txt {
     display: flex;
     flex-direction: column;
-    gap:  60px;
+    gap: 60px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .containerUser {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .img img {
+        width: 300px;
+    }
+
+    .linguagens {
+        font-size: 18px;
+    }
+
+    .nome {
+        font-size: 28px;
+    }
+
+    .descricao {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerUser {
+        gap: 20px;
+    }
+
+    .img img {
+        width: 200px;
+    }
+
+    .linguagens {
+        font-size: 16px;
+    }
+
+    .nome {
+        font-size: 24px;
+    }
+
+    .descricao {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerUser {
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .img img {
+        width: 150px;
+    }
+
+    .linguagens {
+        font-size: 14px;
+    }
+
+    .nome {
+        font-size: 20px;
+    }
+
+    .descricao {
+        font-size: 18px;
+    }
 }
