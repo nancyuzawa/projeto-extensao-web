@@ -1,25 +1,30 @@
-:root{
-    --bg-color: #1e1e1e ;
+:root {
+    --bg-color: #1e1e1e;
     --txt-color: #f1f1f1;
 }
 
-body{
+body {
     background-color: var(--bg-color);
     color: var(--txt-color);
 }
 
-#sobreNosServ{
+#sobreNosServ {
     display: flex;
     flex-direction: column;
     background-color: #272727;
     text-align: center;
-
+    padding: 20px;
 }
 
-hr{
+hr {
     width: 700px;
     margin: auto;
-    margin-bottom: 20px            ;
+    margin-bottom: 20px;
 }
 
-
+/* Responsividade */
+@media (max-width: 768px) {
+    hr {
+        width: 90%;
+    }
+}
