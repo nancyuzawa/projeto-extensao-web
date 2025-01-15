@@ -1,20 +1,27 @@
 [
     {
-        "nome": "Serviço 1",
-        "descricao": "Descrição do serviço 1.",
-        "imagem": "path/para/imagem1.jpg",
-        "tipo": "educacional"
+        "imagem": "../Images/sev1.jpg",
+        "titulo": "Atenção às famílias",
+        "descricao": "Acolhimento e acompanhamento oferecido a gestantes, pais de bebês, crianças, adolescentes ou adultos."
     },
     {
-        "nome": "Serviço 2",
-        "descricao": "Descrição do serviço 2.",
-        "imagem": "path/para/imagem2.jpg",
-        "tipo": "assistencial"
+        "imagem": "../Images/sev2.jpg",
+        "titulo": "Atenção Terapêutica",
+        "descricao": "Atendimento individual ou em grupo em equipe multiprofissional nas áreas de fisioterapia, terapia ocupacional, fonoaudiologia, psicologia e pedagogia para crianças e adolescentes."
     },
     {
-        "nome": "Serviço 3",
-        "descricao": "Descrição do serviço 3.",
-        "imagem": "path/para/imagem3.jpg",
-        "tipo": "educacional"
+        "imagem": "../Images/sev3.jpg",
+        "titulo": "Apoio à Educação Inclusiva",
+        "descricao": "Atendimento Educacional Especializado (AEE), serviço projetado para derrubar barreiras e promover a participação plena de estudantes com síndrome de Down e deficiência intelectual. Nosso objetivo é cultivar a independência e a autonomia desses alunos sem seus ambientes escolares."
+    },
+    {
+        "imagem": "../Images/sev4.jpg",
+        "titulo": "Atenção à Vida Adulta",
+        "descricao": "Oferecido a jovens e adultos com deficiência intelectual a partir de 16 anos. É composto por programas que visam desenvolver autonomia em atividades da vida cotidiana, relacionamentos interpessoais e afetivos, sexualidade e carreira profissional."
+    },
+    {
+        "imagem": "../Images/sev5.png",
+        "titulo": "Ateliê de Arte Thomaz Perina",
+        "descricao": "Espaço de vivência artística que possibilita a ampliação do potencial expressivo de cada pessoa bem como ampliação de seu conhecimento artístico, cultural e social."
     }
 ]

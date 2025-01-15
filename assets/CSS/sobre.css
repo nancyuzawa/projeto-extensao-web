@@ -8,17 +8,18 @@ body{
     color: var(--txt-color);
 }
 
-#sobreNos{
+#sobreNosServ{
     display: flex;
     flex-direction: column;
     background-color: #272727;
-
     text-align: center;
+
 }
 
 hr{
     width: 700px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 20px            ;
 }
+
 

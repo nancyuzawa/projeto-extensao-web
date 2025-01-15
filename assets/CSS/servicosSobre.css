@@ -2,35 +2,32 @@
     --card-color: #2e2d2d;
     --card-text-color: #f1f1f1;
 }
+
 .containerServico {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 20px;
+    flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte caso não caibam */
+    flex-direction: row; /* Faz com que os cards apareçam lado a lado */
+    gap: 20px; /* Espaçamento entre os cards */
     margin-top: 20px;
-    background-color: var(--card-color);
-    width: auto;
-    max-width: 300px;
-    border-radius: 10px;
-    color: var(--card-text-color);
-    
+    width: 100%; /* Faz o container ocupar toda a largura disponível */
 }
 
-.titulo{
-    align-self: center;
+.card {
+    width: 30%; /* Define a largura de cada card (ajuste conforme necessário) */
+    box-sizing: border-box; /* Para garantir que o padding e border não aumentem o tamanho do card */
+    border-radius: 8px; /* Bordas arredondadas (opcional) */
+    overflow: hidden; /* Garante que o conteúdo dentro do card não vaze */
+    align-items: center;
+
 }
 
-.descricao{
+.containerGeral {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    text-align: center; /* Garante que o texto fique centralizado dentro do próprio elemento */
-    height: 100%; /* Certifique-se de que a altura do elemento esteja definida */
-}
-
-.descricao p{
-    text-align: center;
-    margin: auto;
+    flex-direction: column; /* Deixe os elementos internos do card dispostos em coluna */
+    margin: 10px;
+    background-color: #2e2d2d;
+    border-radius: 10px;
+    padding-bottom: 5px;
 }
 
 .servHeader {
@@ -62,6 +59,10 @@
 }
 
 @media (max-width: 768px) {
+    .card {
+        width: 100%; /* Em telas menores, os cards ocuparão toda a largura */
+    }
+
     .servHeader .img {
         width: 80px; /* Ajuste para telas menores */
     }

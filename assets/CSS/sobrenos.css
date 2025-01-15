@@ -1,0 +1,51 @@
+#sobreNos {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.containerSobreNos {
+    display: flex;
+    width: 100%;
+}
+
+.menu {
+    width: 20%;
+    padding: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.menu li:hover {
+    background: #ddd;
+}
+
+.menu li.active {
+    background: #007BFF; /* Cor de fundo quando ativo */
+    color: #fff; /* Cor do texto quando ativo */
+    font-weight: bold; /* Destaque no texto */
+    border-radius: 5px; /* Para um visual mais moderno */
+}
+
+.content {
+    width: 80%;
+    padding: 20px;
+}
+
+.content-item {
+    display: none;
+}
+
+.content-item.active {
+    display: block;
+}
