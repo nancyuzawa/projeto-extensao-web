@@ -34,6 +34,7 @@
     display: flex;
     background-color: var(--card-color);
     padding: 10px;
+    margin-bottom: 10px;
     border-radius: 8px 8px 0px 0px;
     text-align: center;
     flex-direction: row;
@@ -56,6 +57,10 @@
     object-fit: cover; /* Garante que a imagem mantenha sua proporção, cortando se necessário */
     border-radius: 8px;
     display: block;
+}
+.titulo{
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
