@@ -1,0 +1,24 @@
+:root{
+    --bg-color: #1e1e1e ;
+    --txt-color: #f1f1f1;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+}
+
+#sobreNos{
+    display: flex;
+    flex-direction: column;
+    background-color: #272727;
+
+    text-align: center;
+}
+
+hr{
+    width: 700px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
