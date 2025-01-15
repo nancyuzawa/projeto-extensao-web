@@ -1,0 +1,20 @@
+[
+    {
+        "nome": "Serviço 1",
+        "descricao": "Descrição do serviço 1.",
+        "imagem": "path/para/imagem1.jpg",
+        "tipo": "educacional"
+    },
+    {
+        "nome": "Serviço 2",
+        "descricao": "Descrição do serviço 2.",
+        "imagem": "path/para/imagem2.jpg",
+        "tipo": "assistencial"
+    },
+    {
+        "nome": "Serviço 3",
+        "descricao": "Descrição do serviço 3.",
+        "imagem": "path/para/imagem3.jpg",
+        "tipo": "educacional"
+    }
+]

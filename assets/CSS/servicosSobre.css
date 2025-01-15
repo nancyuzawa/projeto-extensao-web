@@ -1,0 +1,35 @@
+
+.containerServico {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    flex-direction: column;
+    background-color: blueviolet;
+    width: 300px;
+    border-radius: 10px;
+    
+}
+.descricao{
+    align-self: center;
+}
+
+.servHeader {
+    display: flex;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    width: auto;
+    text-align: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    
+    
+}
+
+.servHeader img {
+    width: 100%;
+    border-radius: 8px;
+}
+

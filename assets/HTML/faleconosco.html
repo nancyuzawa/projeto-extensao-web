@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="../CSS/faleconosco.css">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <style>
+        button:disabled{
+            opacity: 0.4;
+            cursor: default;
+        }
+        button:disabled:hover{
+            background-color: #00b0e6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div id="logo">
+                <img id="" src="../Images/fsd_logo.png" alt="Logo FSDown">
+            </div>
+            <div id="nav">
+                <a href="../../index.html">Home</a>
+                <a href="./servicos.html">Serviços</a>
+                <a href="./sobre.html">Sobre Nós</a>
+                <a href="./sobredevs.html">Sobre os devs</a>
+                <a href="./faleconosco.html">Contato</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="contato" class="restaurant-contact">
+            <div class="contact-info">
+                <h1>Entre em Contato</h1>
+                <p>Tem alguma dúvida ou deseja fazer uma reserva? Preencha o formulário abaixo ou entre em contato conosco!</p>
+                <ul>
+                    <li><strong>Horário de funcionamento:</strong> Segunda à sexta das 08h00 às 17h00</li>
+                    <li><strong>Endereço:</strong> Rua José Antonio Marinho, 430
+                        Barão Geraldo – Campinas/SP
+                        CEP: 13084-783</li>
+                    <li><strong>Whatsapp:</strong> (19) 99266 4914</li>
+                    <li><strong>Telefone:</strong> (19) 3790 2818</li>
+                    <li><strong>Email:</strong> fsdown@fsdown.org.br</li>
+                </ul>
+                <div class="contact-form">
+                    <form id="contact-form" action="https://formsubmit.co/mih.imaginatrix@gmail.com" method="POST">
+                        <input 
+                            id="inp-name"
+                            type="text" 
+                            name="name" 
+                            placeholder="Seu nome" 
+                        />
+                        <input 
+                            id="inp-email"
+                            type="email" 
+                            name="email" 
+                            placeholder="Seu email" 
+                        />
+                        <textarea 
+                            id="inp-message"
+                            name="message" 
+                            placeholder="Sua mensagem">
+                        </textarea>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/assets/HTML/faleconosco.html">
+                            
+                        <button id="btn-send" onclick="verificarCampo()" type="submit" class="cta-button" disabled>Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map">
+                <h2>Nos Encontre</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.196407585561!2d-47.08659922469177!3d-22.83222187930767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c6c5eacee349%3A0xafa934ea018b600a!2sFunda%C3%A7%C3%A3o%20Sindrome%20de%20Down!5e0!3m2!1spt-BR!2sbr!4v1736904193113!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
+        
+    </main>
+    
+    <footer >
+        <p>&copy; 2025 FSDown. Todos os direitos reservados.</p>
+        <p>Desenvolvido com ❤ por nossa equipe de voluntários.</p>
+    </footer>
+
+    <script src="../JS/faleconosco.js"></script>
+    
+</body>
+</html>

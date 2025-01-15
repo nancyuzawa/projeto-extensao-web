@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+
+.card{
+    margin: 1rem;
+    background-color: #333;
+    max-width: 400px;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.card .img img {
+    width: 100%; /* A imagem ocupa toda a largura disponível do contêiner */
+    height: auto; /* Altura fixa da imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+    border-radius: 10px;
+  }
+
+.titulo{
+    font-family: "Kanit", serif;
+    font-weight: bold;
+    color: white;
+    font-size: large;
+}
+.titulo:hover{
+    color: #0092e6;
+}
+
+.data{
+    font-family: "Kanit", serif;
+    color: white;
+}

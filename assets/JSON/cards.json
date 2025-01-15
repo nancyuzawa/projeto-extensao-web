@@ -1,0 +1,51 @@
+[
+    {
+        "data": "10 DE DEZEMBRO DE 2024",
+        "titulo": "Apoie a FSDown através da declaração do imposto de Renda.",
+        "img": "./assets/Images/cd1.png",
+        "tipo": "a"
+    },
+    {
+        "data": "1 DE OUTUBRO DE 2024",
+        "titulo": "Seja um parceiro FSDown. Apoie nossos projetos!",
+        "img": "./assets/Images/cd2.png",
+        "tipo": "a"
+    },
+    {
+        "data": " 8 de agosto de 2023",
+        "titulo": "Tem vaga na FSDown!",
+        "img": "./assets/Images/cd3.png",
+        "tipo": "a"
+    },
+    {
+        "data": "13 de janeiro de 2025",
+        "titulo": "Desafios e barreiras na inclusão no mercado de trabalho: para além das cotas.",
+        "img": "./assets/Images/cd4.png",
+        "tipo": "a"
+    },
+    {
+        "data": "2 de janeiro de 2025",
+        "titulo": "Feliz Ano Novo!",
+        "img": "./assets/Images/cd5.png",
+        "tipo": "a"
+    },
+    {
+        "data": "27 de novembro de 2024",
+        "titulo": "Café com RH: “Inclusão no Mercado de Trabalho: superando barreiras, criando oportunidades”",
+        "img": "./assets/Images/cd6.png",
+        "tipo": "a"
+    },
+    {
+        "data": "26 de novembro de 2024",
+        "titulo": "Desviar do hospitalar, mirar na escola hospitaleira – Capacitação Online",
+        "img": "./assets/Images/cd7.png",
+        "tipo": "a"
+    },
+    
+    {
+        "data": "25 DE DEZEMBRO DE 2024",
+        "titulo": "Apoie a FSDown com doações de fim de ano.",
+        "img": "./assets/Images/cd8.png",
+        "tipo": "b"
+    }
+]
