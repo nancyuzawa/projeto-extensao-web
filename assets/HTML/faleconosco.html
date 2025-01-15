@@ -52,22 +52,25 @@
                             type="text" 
                             name="name" 
                             placeholder="Seu nome" 
+                            onchange="verificarCampo()"
                         />
                         <input 
                             id="inp-email"
                             type="email" 
                             name="email" 
                             placeholder="Seu email" 
+                            onchange="verificarCampo()"
                         />
                         <textarea 
                             id="inp-message"
                             name="message" 
-                            placeholder="Sua mensagem">
-                        </textarea>
+                            placeholder="Sua mensagem"
+                            onchange="verificarCampo()"
+                            ></textarea>
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_next" value="http://127.0.0.1:5500/assets/HTML/faleconosco.html">
                             
-                        <button id="btn-send" onclick="verificarCampo()" type="submit" class="cta-button" disabled>Enviar Mensagem</button>
+                        <button id="btn-send" onchange="verificarCampo()" type="submit" class="cta-button" disabled>Enviar Mensagem</button>
                     </form>
                 </div>
             </div>
