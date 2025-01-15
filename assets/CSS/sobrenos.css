@@ -4,19 +4,23 @@
     display: flex;
     margin-bottom: 50px;
     
-    flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
+    flex-wrap: wrap; 
 }
 
 .containerSobreNos {
     display: flex;
     width: 100%;
     flex-direction: row;
-    flex-wrap: wrap; /* Ajusta os elementos ao espaço disponível */
+    flex-wrap: wrap; 
 }
 
 .menu {
     width: 10%;
     padding: 10px;
+}
+
+a{
+    color: #007BFF;
 }
 
 .menu ul {

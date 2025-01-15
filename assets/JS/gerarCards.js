@@ -1,14 +1,14 @@
 async function carregarCards(tipoFiltro) {
     try {
-        const response = await fetch('./assets/JSON/cards.json'); // Caminho para o arquivo JSON
-        const cards = await response.json(); // Parse do JSON
+        const response = await fetch('./assets/JSON/cards.json'); 
+        const cards = await response.json();
 
-        console.log(cards); // Verifique se o JSON foi carregado corretamente
+        console.log(cards); 
 
-        // Filtra os cards com base no tipo (se fornecido)
+        
         const cardsFiltrados = tipoFiltro ? cards.filter(card => card.tipo === tipoFiltro) : cards;
 
-        criarCards(cardsFiltrados); // Chama a função para criar os cards com os dados filtrados
+        criarCards(cardsFiltrados); 
     } catch (error) {
         console.error('Erro ao carregar os dados do JSON:', error);
     }
@@ -16,13 +16,13 @@ async function carregarCards(tipoFiltro) {
 
 function criarCards(cards) {
     const container = document.getElementById('cards-container');
-    container.innerHTML = ''; // Limpa os cards existentes antes de adicionar novos
+    container.innerHTML = '';
 
     cards.forEach(card => {
-        // Verifique se a imagem foi fornecida corretamente
+        
         if (card.img === undefined || card.img === "") {
             console.error("Imagem não encontrada para o card:", card);
-            return; // Se a imagem não estiver definida, pula para o próximo card
+            return; 
         }
 
         // Criação do elemento card
@@ -54,13 +54,13 @@ function criarCards(cards) {
         divCard.appendChild(divData);
         divCard.appendChild(divTitulo);
 
-        // Adicionando o card ao container
+        
         container.appendChild(divCard);
     });
 }
 
-// Lógica para buscar o tipo no HTML
+
 window.onload = function() {
     const tipoDefinido = document.getElementById('cards-container').getAttribute('data-tipo');
-    carregarCards(tipoDefinido); // Carrega os cards com base no tipo
+    carregarCards(tipoDefinido); 
 };

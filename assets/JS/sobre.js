@@ -2,14 +2,14 @@
 fetch('../JSON/servicos.json')
 .then(response => response.json())
 .then(data => {
-    // Seleciona o container onde os cards serão inseridos
+    
     const container = document.getElementById('servicosContainer');
 
     // Para cada serviço no JSON, cria um novo card
     data.forEach(servico => {
-        // Cria a estrutura do card
+       
         const card = document.createElement('div');
-        card.classList.add('card'); // Adiciona uma classe ao card
+        card.classList.add('card');
 
         // Monta o HTML do card
         card.innerHTML = `
